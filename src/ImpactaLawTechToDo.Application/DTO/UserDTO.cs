@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 
 namespace ImpactaLawTechToDo.Application.DTO
 {
@@ -7,7 +7,7 @@ namespace ImpactaLawTechToDo.Application.DTO
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
         public int UserType { get; set; }
-        public IList Tasks { get; set; }
     }
 }

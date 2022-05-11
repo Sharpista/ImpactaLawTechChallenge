@@ -9,5 +9,7 @@ namespace ImpactaLawTechToDo.Infra.Data.Repositories
         public UserRepository(ApplicationDBContext applicationDBContext) : base(applicationDBContext)
         {
         }
+
+       
     }
 }

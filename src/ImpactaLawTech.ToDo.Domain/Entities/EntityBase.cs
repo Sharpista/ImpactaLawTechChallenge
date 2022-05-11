@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ImpactaLawTech.ToDo.Domain.Entities
+﻿namespace ImpactaLawTech.ToDo.Domain.Entities
 {
     public abstract class EntityBase
     {

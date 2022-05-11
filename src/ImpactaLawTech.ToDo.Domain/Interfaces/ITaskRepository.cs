@@ -4,5 +4,6 @@ namespace ImpactaLawTech.ToDo.Domain.Interfaces
 {
     public  interface  ITaskRepository : IBaseRepository<Tasks>
     {
+
     }
 }

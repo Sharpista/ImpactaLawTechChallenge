@@ -10,6 +10,7 @@ namespace ImpactaLawTechToDo.Infra.Data.Context
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Tasks> Tasks { get; set; }
+        public DbSet<UserTasks> UserTasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

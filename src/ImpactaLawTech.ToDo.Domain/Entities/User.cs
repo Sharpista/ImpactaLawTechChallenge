@@ -10,18 +10,16 @@ namespace ImpactaLawTech.ToDo.Domain.Entities
         public string Email { get; private set; }
         public string Password { get; private set; }
         public UserTypeEnumerator UserType { get; private set; }
-        public IList<Tasks> Tasks { get; set; }
 
         public User()
         {
-
+            
         }
-        public User(int id, string name, string email, string password, UserTypeEnumerator userType)
+        public User(int id, string name, string email, string password, UserTypeEnumerator userType, List<Tasks> tasks)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id value");
             Id = id;
             UserType = userType;
-            Tasks = new List<Tasks>();
             ValidateDomain(name, password, email);
         }
         public void Update(string name, string email, string password, UserTypeEnumerator userType)

@@ -22,8 +22,12 @@ namespace ImpactaLawTechToDo.Infra.IoC.Dependency_Resolvers
 
             services.AddScoped<ITaskRepository, TasksRepository>();
             services.AddScoped<ITasksService, TasksService>();
+
             services.AddScoped<IUserRepository, UserRepository> ();
             services.AddScoped<IUserService, UserService>();
+
+            services.AddScoped<IUserTasksRepository, UserTaskRepository>();
+            services.AddScoped<IUserTasksService, UserTasksService>();
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 

@@ -14,12 +14,8 @@ namespace ImpactaLawTechToDo.Infra.Data.EntitiesConfiguration
            builder.Property(x => x.Email).IsRequired();
            builder.Property(x => x.Password).IsRequired();
 
-           builder.HasMany(x => x.Tasks).WithOne(x => x.User).HasForeignKey(x => x.UserId);
-
-
-
             builder.HasData(
-                new User(1, "ADMIN", "ADMIN", "123", UserTypeEnumerator.ADMIN)
+                new User(1, "ADMIN", "ADMIN", "123", UserTypeEnumerator.ADMIN, null)
                 );
         }
     }

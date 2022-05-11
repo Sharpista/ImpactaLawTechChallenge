@@ -10,6 +10,7 @@ namespace ImpactaLawTechToDo.Application.Mappings
         {
             CreateMap<User, UserDTO>().ReverseMap();
             CreateMap<Tasks, TasksDTO>().ReverseMap();
+            CreateMap<UserTasks, UserTasksDTO>().ReverseMap();
         }
     }
 }

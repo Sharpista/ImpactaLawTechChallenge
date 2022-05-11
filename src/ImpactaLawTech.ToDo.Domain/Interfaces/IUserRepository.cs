@@ -4,6 +4,6 @@ namespace ImpactaLawTech.ToDo.Domain.Interfaces
 {
     public  interface IUserRepository : IBaseRepository<User>
     {
-        
+
     }
 }
